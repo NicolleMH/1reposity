@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleza Radiante - Maquillaje Profesional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      background-color: #ffeef5;
+    }
+    
+    header {
+      background-color: #ff5c8d;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .tagline {
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    
+    nav {
+      background-color: #ff99b8;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+      background-color: #ff7ca6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: #ff5c8d;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+    
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .product-image {
+      height: 200px;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .product-info {
+      padding: 1.5rem;
+    }
+    
+    .product-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .product-description {
+      color: #666;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .product-price {
+      font-weight: bold;
+      color: #ff5c8d;
+      font-size: 1.3rem;
+    }
+    
+    .sale-price {
+      color: #ff3366;
+      margin-left: 0.5rem;
+    }
+    
+    .original-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 0.9rem;
+    }
+    
+    .featured {
+      position: relative;
+    }
+    
+    .featured::after {
+      content: 'Destacado';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #ff5c8d;
+      color: white;
+      padding: 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .footer-links a {
+      color: #ff99b8;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+      
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Belleza Radiante</h1>
+    <p class="tagline">Maquillaje profesional para resaltar tu belleza natural</p>
+  </header>
+  
+  <nav>
+    <a href="#bases">Bases</a>
+    <a href="#labiales">Labiales</a>
+    <a href="#ojos">Ojos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  
+  <main class="container">
+    <section id="bases">
+      <h2 class="section-title">Bases y Correctores</h2>
+      <div class="products">
+        <div class="product-card featured">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Base líquida hidratante">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Base Líquida Hidratante</h3>
+            <p class="product-description">Cobertura media a alta con acabado natural luminoso. Hidratación 24 horas. Disponible en 20 tonos.</p>
+            <p class="product-price">$28.99 <span class="original-price">$32.99</span></p>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Corrector de alta cobertura">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Corrector Alta Cobertura</h3>
+            <p class="product-description">Corrector cremoso que cubre ojeras y imperfecciones. No se asienta en líneas finas.</p>
+            <p class="product-price">$19.50</p>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Polvo translúcido matificante">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Polvo Translúcido Matificante</h3>
+            <p class="product-description">Fija el maquillaje y controla el brillo facial. Acabado ultraligero sin efecto máscara.</p>
+            <p class="product-price">$22.75</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="labiales">
+      <h2 class="section-title">Labiales</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Labial mate larga duración">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Labial Mate Larga Duración</h3>
+            <p class="product-description">Fórmula cremosa que se seca mate. Duración de hasta 8 horas sin transferencia.</p>
+            <p class="product-price">$15.99</p>
+          </div>
+        </div>
+        
+        <div class="product-card featured">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Gloss hidratante con brillo">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gloss Hidratante con Brillo</h3>
+            <p class="product-description">Fórmula no pegajosa con micropartículas brillantes. Hidrata y da volumen a los labios.</p>
+            <p class="product-price">$12.50 <span class="original-price">$17.99</span></p>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Tinta labial">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tinta Labial</h3>
+            <p class="product-description">Coloración natural que dura todo el día. Se funde con tus labios para un aspecto natural.</p>
+            <p class="product-price">$14.25</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="ojos">
+      <h2 class="section-title">Maquillaje de Ojos</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Paleta de sombras">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Paleta de Sombras "Atardecer"</h3>
+            <p class="product-description">12 tonos altamente pigmentados en acabados mate y metálicos. Colores cálidos y versátiles.</p>
+            <p class="product-price">$35.99</p>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Máscara de pestañas">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Máscara de Pestañas Voluminizadora</h3>
+            <p class="product-description">Fórmula que no forma grumos. Alarga, define y da volumen a las pestañas. Resistente al agua.</p>
+            <p class="product-price">$18.75</p>
+          </div>
+        </div>
+        
+        <div class="product-card featured">
+          <div class="product-image">
+            <img src="/api/placeholder/250/200" alt="Delineador líquido">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Delineador Líquido de Precisión</h3>
+            <p class="product-description">Punta ultrafina para la máxima precisión. Negro intenso de larga duración.</p>
+            <p class="product-price">$16.50 <span class="original-price">$21.99</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p style="margin-bottom: 1rem;">¿Tienes dudas sobre nuestros productos? ¿Necesitas asesoría personalizada sobre tonos o técnicas? Estamos aquí para ayudarte.</p>
+        <p style="margin-bottom: 1rem;"><strong>Email:</strong> info@bellezaradiante.com</p>
+        <p style="margin-bottom: 1rem;"><strong>Teléfono:</strong> (555) 123-4567</p>
+        <p style="margin-bottom: 1rem;"><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 AM a 6:00 PM</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 Belleza Radiante - Todos los derechos reservados</p>
+    <div class="footer-links">
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Envíos y Devoluciones</a>
+    </div>
+  </footer>
+</body>
+</html>
